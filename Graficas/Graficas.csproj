@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Graficas</RootNamespace>
+    <AssemblyName>Graficas</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formBattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBattle.Designer.cs">
+      <DependentUpon>formBattle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPlayerCPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPlayerCPU.Designer.cs">
+      <DependentUpon>formPlayerCPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPlayerPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPlayerPlayer.Designer.cs">
+      <DependentUpon>formPlayerPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPreviaBattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPreviaBattle.Designer.cs">
+      <DependentUpon>formPreviaBattle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formBattle.resx">
+      <DependentUpon>formBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPlayerCPU.resx">
+      <DependentUpon>formPlayerCPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPlayerPlayer.resx">
+      <DependentUpon>formPlayerPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPreviaBattle.resx">
+      <DependentUpon>formPreviaBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PVCseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PVCsinseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PVPseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PVPsinseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CVCseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CVCsinseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-principal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picNadie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Combatientes\Combatientes.csproj">
+      <Project>{251d3e8c-8736-424a-91a8-4fb8380e1963}</Project>
+      <Name>Combatientes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMago1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picHada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picFreestyler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picFreestyler-ataque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picLuchador-defensa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picLuchador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picGuerrero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picGuerrero-ataque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picGuerrero-defensa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMago-defensa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMago-ataque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picHada-defensa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picHada-ataque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picLuchador-ataque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picVS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-Battle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-Battle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-Battle21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picFreestyler-defensa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picMagiaNegra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picAbraCadabra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIlusionismo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picConLaVida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picDuplicar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picUnAlmaPorOtra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picEspadaSagrada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCaballoDeTroya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picRelevo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picContraLasCuerdas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picAtaqueAereo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picPunchline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picReplica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTongo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

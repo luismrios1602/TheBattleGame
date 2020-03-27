@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graficas", "Graficas\Graficas.csproj", "{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combatientes", "Combatientes\Combatientes.csproj", "{251D3E8C-8736-424A-91A8-4FB8380E1963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06B22CE-C3AE-4DC4-8ABA-CCFAB962229C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251D3E8C-8736-424A-91A8-4FB8380E1963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251D3E8C-8736-424A-91A8-4FB8380E1963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251D3E8C-8736-424A-91A8-4FB8380E1963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251D3E8C-8736-424A-91A8-4FB8380E1963}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2179026F-150D-4182-9F4D-E93CB0DF62F1}
+	EndGlobalSection
+EndGlobal
